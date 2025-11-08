@@ -4,7 +4,7 @@ This project implements a simplified CRM pipeline where leads can be validated a
 
 When a user validates a lead, two external checks (National Registry and Judicial Record) run in parallel, followed by an internal qualification step. Leads that meet the criteria are automatically moved to the Prospects section. The app uses mock asynchronous services to simulate realistic API behavior.
 
-The project emphasizes deterministic behavior for reliable testing, clean styling through CSS variables, and a responsive, accessible layout. Improvements such as persistent storage, new lead creation, and real API integration could be added to extend functionality.
+The project emphasizes deterministic behavior for reliable testing, clean styling through CSS variables and accessible layout. Improvements such as persistent storage, new lead creation, and real API integration could be added to extend functionality.
 
 ## How to run
 1. npm install
