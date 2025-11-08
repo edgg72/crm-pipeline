@@ -4,8 +4,13 @@ import App from '../../App'
 test('successful conversion moves lead to prospects', async () => {
   render(<App />)
 
-  const leadCard = screen.getByText(/Ana Rodriguez/i).closest('.card')!
-  const btn = within(leadCard).getByRole('button', { name: /validate/i })
+  const leadElement = screen.getByText(/Ana Rodriguez/i)
+  const leadCard = leadElement.closest('.card')
+  if (!(leadCard instanceof HTMLElement)) {
+    throw new Error('Expected .card to be an HTMLElement')
+  }
+
+const btn = within(leadCard).getByRole('button', { name: /validate/i })
 
   fireEvent.click(btn)
 
