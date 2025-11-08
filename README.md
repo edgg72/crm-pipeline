@@ -6,6 +6,9 @@ When a user validates a lead, two external checks (National Registry and Judicia
 
 The project emphasizes deterministic behavior for reliable testing, clean styling through CSS variables and accessible layout. Improvements such as persistent storage, new lead creation, and real API integration could be added to extend functionality.
 
+## Deployed version in Vercel
+[Deployed project](https://vercel.com/edgg72s-projects/crm-pipeline-o8gs)
+
 ## How to run
 1. npm install
 2. Run dev server: npm run dev, open http://localhost:5173
