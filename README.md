@@ -7,16 +7,12 @@ When a user validates a lead, two external checks (National Registry and Judicia
 The project emphasizes deterministic behavior for reliable testing, clean styling through CSS variables, and a responsive, accessible layout. Improvements such as persistent storage, new lead creation, and real API integration could be added to extend functionality.
 
 ## How to run
-1. 
-npm install
-2. Run dev server:
-npm run dev
-Open http://localhost:5173
+1. npm install
+2. Run dev server:npm run dev, open http://localhost:5173
 
 ## Tests
 This project includes basic unit/integration tests using Vitest + Testing Library.
-Run:
-npm run test
+Run: npm run test
 
 
 
