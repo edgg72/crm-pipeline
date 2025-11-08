@@ -26,13 +26,13 @@ const App = () => {
         <img src="/crm-logo.png" alt="CRM Pipeline logo" />
       </header>
       <div className="pipeline">
-        <section className="leads">
+        <section className="leads rounded-background">
           <h2>Leads</h2>
           {leads.length === 0 ? <p>No leads</p> : leads.map(l => (
             <LeadCard key={l.id} lead={l} onConverted={moveToProspect} />
           ))}
         </section>
-        <section>
+        <section className="rounded-background">
           <h2>Prospects</h2>
           {prospects.length === 0 ? <p>No prospects</p> : prospects.map(p => (
             <div className="card" key={p.id}>

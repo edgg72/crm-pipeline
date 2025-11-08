@@ -11,6 +11,7 @@
   --color-scroll-thumb-hover: #999;
   --color-scroll-track: #f0f0f0;
   --color-primary-hover: #064096;
+  --color-button: #007bff;
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
@@ -33,6 +34,12 @@ body {
   margin: 0 auto;
 }
 
+.rounded-background {
+  background-color: var(--color-scroll-track);
+  border-radius: var(--radius-lg);
+  padding-inline: var(--spacing-sm);
+}
+
 .pipeline {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,14 +50,13 @@ body {
 .pipeline .leads {
   height: 75vh;
   overflow-y: auto;
-  padding-inline: var(--spacing-sm);
   position: relative;
 }
 
 .pipeline .leads h2 {
   position: sticky;
   top: 0;
-  background: var(--color-bg);
+  background: var(--color-scroll-track);
   padding: var(--spacing-sm) 0;
   z-index: 10;
   border-bottom: 1px solid var(--color-border);
@@ -99,10 +105,11 @@ body {
 button {
   margin-top: var(--spacing-sm);
   padding: var(--spacing-xs) var(--spacing-md);
+  font-family: var(--font-family);
   border-radius: var(--radius-md);
   cursor: pointer;
-  background: #007bff;
-  color: white;
+  background: var(--color-button);
+  color: var(--color-surface);
   border: none;
   font-weight: 500;
   transition: background-color 0.2s ease;
