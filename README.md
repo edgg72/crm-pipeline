@@ -8,7 +8,7 @@ The project emphasizes deterministic behavior for reliable testing, clean stylin
 
 ## How to run
 1. npm install
-2. Run dev server:npm run dev, open http://localhost:5173
+2. Run dev server: npm run dev, open http://localhost:5173
 
 ## Tests
 This project includes basic unit/integration tests using Vitest + Testing Library.
