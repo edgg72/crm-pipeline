@@ -1,6 +1,6 @@
 type ServiceResult = { ok: boolean; details?: string };
 
-const BASE_DELAY = 400;
+const BASE_DELAY = 200;
 const RANDOM_DELAY = 300;
 const BASE_SCORE = 50;
 const SCORE_NATIONAL_OK = 30;

@@ -47,6 +47,10 @@ body {
   align-items: start;
 }
 
+.pipeline h2 {
+  font-weight: 600;
+}
+
 .pipeline .leads {
   height: 75vh;
   overflow-y: auto;
