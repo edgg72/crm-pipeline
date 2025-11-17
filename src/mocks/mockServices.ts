@@ -39,11 +39,11 @@ export  const  checkJudicialRecord = async(
   return { ok: false, details: "Has judicial records" };
 }
 
-export async function qualificationScore(inputs: {
+export const qualificationScore = async (inputs: {
   national: ServiceResult;
   judicial: ServiceResult;
   nationalId: string;
-}) {
+}) => {
   await simulateLatency(BASE_DELAY + Math.random() * RANDOM_DELAY);
   let score = BASE_SCORE;
   if (inputs.national.ok) score += SCORE_NATIONAL_OK;
